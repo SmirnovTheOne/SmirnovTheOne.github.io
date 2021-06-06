@@ -11,11 +11,11 @@ let table = document.querySelector('.table'),
     step = true, /* параметр указывающий кто ходит в данный момент */
     count = 0,
     circle = `<svg class="circle">
-				<circle r="45" cx="58" cy="58" stroke="rgba(252, 252, 76, 0.6)" stroke-width="10" fill="none" stroke-linecap="round" />
+				<circle r="45" cx="58" cy="58" stroke="rgba(0, 77, 255, 0.7)" stroke-width="10" fill="none" stroke-linecap="round" />
 			</svg>`,
     cross = `<svg class="cross">
-				<line class="first" x1="15" y1="15" x2="100" y2="100" stroke="rgba(255, 102, 102, 0.6)" stroke-width="10" stroke-linecap="round" />
-				<line class="second" x1="100" y1="15" x2="15" y2="100" stroke="rgba(255, 102, 102, 0.6)" stroke-width="10" stroke-linecap="round" />
+				<line class="first" x1="15" y1="15" x2="100" y2="100" stroke="rgba(255, 0, 53, 0.7)" stroke-width="10" stroke-linecap="round" />
+				<line class="second" x1="100" y1="15" x2="15" y2="100" stroke="rgba(255, 0, 53, 0.7)" stroke-width="10" stroke-linecap="round" />
 			</svg>`;
 
 

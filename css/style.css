@@ -28,7 +28,7 @@ body{
 
 /* вывод результата в конце партии */
 .result {
-    color: whitesmoke;
+    color: #ff0000;
     font-weight: bold;
     font-size: 40px;
     height: 50px;
@@ -56,11 +56,13 @@ body{
 /* кнопка новой игры */
 .new-game {
     border: none;
-    color: rgb(24, 159, 37);
-    background: rgba(249, 255, 163, 1);
+    color: #ffffff;
+    background: #00b30c;
+    border: 5px solid #00ff11;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
+
     cursor: pointer;
     margin-bottom: 20px;
     display: none;
@@ -73,19 +75,22 @@ body{
 /* кнопка начать игру (исчезает) */
 .buttonStart {
     border: none;
-    color: rgb(24, 159, 37);
-    background: rgba(249, 255, 163, 1);
+    color: #ffffff;
+    background: #00b30c;
+    border: 5px solid #00ff11;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
+
     cursor: pointer;
 }
 
 /* кнопка выбора Х */
 .selectRed {
     border: none;
-    color: #fff;
-    background: red;
+    color: #ffffff;
+    background: #bd002c;
+    border: 5px solid #ff0035;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
@@ -93,7 +98,7 @@ body{
 }
 
 .selectRed:hover {
-    background: #e40000;
+    background: #ff0035;
 }
 
 .selectRed:focus {
@@ -104,8 +109,9 @@ body{
 /* кнопка выбора O */
 .selectGreen {
     border: none;
-    color: #fff;
-    background: #008000;
+    color: #ffffff;
+    background: #0039bd;
+    border: 5px solid #004dff;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
@@ -113,7 +119,7 @@ body{
 }
 
 .selectGreen:hover {
-    background: #006000;
+    background: #004fff;
 }
 
 .selectGreen:focus {
@@ -156,7 +162,7 @@ body .button{
     text-align: center;
     font-size: 30px;
     font-family: 'Pacifico', cursive;
-    color: red;
+    color: #000000;
 }
 
 /* подсветка выигрышной комбинации */
