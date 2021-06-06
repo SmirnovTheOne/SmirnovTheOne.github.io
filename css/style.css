@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/background.jpg') center no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* таймер */
+.clock {
+    color: rgba(249, 255, 163, 0.6);
+    font-weight: bold;
+    font-size: 72px;
+    display: none;
+}
+
+/* вывод результата в конце партии */
+.result {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 40px;
+    height: 50px;
+}
+
+/* параметры игрового поля */
+.table {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    outline: 3px solid rgba(249, 255, 163, 1);
+    display: none;
+}
+
+/* параметры ячеек игрового поля */
+.cell {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(249, 255, 163, 1);
+    cursor: pointer;
+}
+
+/* кнопка новой игры */
+.new-game {
+    border: none;
+    color: rgb(24, 159, 37);
+    background: rgba(249, 255, 163, 1);
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* кнопка начать игру (исчезает) */
+.buttonStart {
+    border: none;
+    color: rgb(24, 159, 37);
+    background: rgba(249, 255, 163, 1);
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* кнопка выбора Х */
+.selectRed {
+    border: none;
+    color: #fff;
+    background: red;
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selectRed:hover {
+    background: #e40000;
+}
+
+.selectRed:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px black;
+}
+
+/* кнопка выбора O */
+.selectGreen {
+    border: none;
+    color: #fff;
+    background: #008000;
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selectGreen:hover {
+    background: #006000;
+}
+
+.selectGreen:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px black;
+}
+
+body .button{
+  font-family: 'Goblin One', cursive;
+
+}
+
+/* Отрисовка таблицы счёта */
+.gamespace {
+    position: relative;
+}
+
+.stat {
+    position: absolute;
+    top: 80px;
+    left: 400px;
+
+    align-items: center;
+    margin-left: 30px;
+    border: 2px solid rgba(249, 255, 163, 1);
+    display: none;
+}
+
+.stat table {
+    border-collapse: collapse;
+    background: rgba(249, 255, 163, 0.7);
+}
+
+.stat table,
+.stat th,
+.stat td {
+    width: 300px;
+    border: 1px solid rgba(249, 255, 163, 1);
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: red;
+}
+
+/* подсветка выигрышной комбинации */
+.active {
+    background: rgba(0, 255, 0, 0.5);
+}
+
+/* отрисовка нолика в ячейке */
+.circle {
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: draw 1s forwards;
+}
+
+/* размеры SVG для крестика */
+.cross {
+    width: 100%;
+    height: 100%;
+}
+
+/* отрисовка 1-й линии для крестика */
+.first {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+    animation: draw 0.6s forwards;
+}
+
+/* отрисовка 2-й линии крестика с задержкой */
+.second {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+    animation: draw 0.6s 0.6s forwards;
+}
+
+/* анимация отрисовки */
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

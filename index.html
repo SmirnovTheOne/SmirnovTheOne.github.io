@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра: крестики-нолики</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="result"></div>
+        <table>
+            <tr>
+                <td>
+                    <div class="clock">00:00:00</div>
+                </td>
+            </tr>
+        </table>
+        <div class="gamespace">
+            <div class="table">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="stat">
+                <table>
+                    <th colspan="2">Счёт</th>
+                    <tr>
+                        <td>Победа X</td>
+                        <td><span id="sX">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Победа O</td>
+                        <td><span id="sO">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ничья</td>
+                        <td><span id="sD">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button class="button buttonStart">НАЧАТЬ</button>
+        <button class="button new-game">Новая игра</button>
+        <div class="button menu">
+            <button class="button selectRed">Я выбираю: Х</button>
+            <button class="button selectGreen">Я выбираю: O</button>
+        </div>
+    </div>
+</div>
+<script src="js/tictactoe.js"></script>
+</body>
+
+</html>
