@@ -57,8 +57,8 @@ body{
 .new-game {
     border: none;
     color: #ffffff;
-    background: #00b30c;
-    border: 5px solid #00ff11;
+    background: #009708;
+    border: 5px solid #00ba07;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
@@ -66,6 +66,9 @@ body{
     cursor: pointer;
     margin-bottom: 20px;
     display: none;
+}
+.new-game:hover {
+    background: #00ba07;
 }
 
 .menu {
@@ -76,15 +79,17 @@ body{
 .buttonStart {
     border: none;
     color: #ffffff;
-    background: #00b30c;
-    border: 5px solid #00ff11;
+    background: #009708;
+    border: 5px solid #00ba07;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;
 
     cursor: pointer;
 }
-
+.buttonStart:hover {
+    background: #00ba07;
+}
 /* кнопка выбора Х */
 .selectRed {
     border: none;
